@@ -27,7 +27,7 @@ jobs:
           password: ${{ github.token }}
 
       - name: Bake and push image
-        uses: docker/bake-action@v4
+        uses: docker/bake-action@v6
         with:
           push: true
           files: |
